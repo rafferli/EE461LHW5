@@ -1,0 +1,611 @@
+@font-face {
+  font-family: HELight;
+  src: url("fonts/HELight.ttf");
+}
+
+@font-face {
+  font-family: HLight;
+  src: url("fonts/HLight.ttf");
+}
+
+@font-face {
+  font-family: HReg;
+  src: url("fonts/HReg.ttf");
+}
+
+@font-face {
+  font-family: HThin;
+  src: url("fonts/HThin.ttf");
+}
+
+@font-face {
+  font-family: HBold;
+  src: url("fonts/HBold.ttf");
+}
+
+@font-face {
+  font-family: HMed;
+  src: url("fonts/HMed.ttf");
+}
+@font-face {
+  font-family: SFBold;
+  src: url("fonts/SF-Pro-Display-Bold.ttf");
+}
+@font-face {
+  font-family: SFMed;
+  src: url("fonts/SF-Pro-Display-Medium.ttf");
+}
+@font-face {
+  font-family: SFLight;
+  src: url("fonts/SF-Pro-Display-Thin.ttf");
+}
+
+body {
+  background-color: rgb(10, 10, 10);
+}
+
+#section1 {
+  height: 100vh;
+  min-height: 900px;
+  width: 99vw;
+  border-top: 1vw solid rgb(10, 10, 10);
+  border-left: 1vw solid rgb(10, 10, 10);
+  background-color: white;
+}
+
+#section2 {
+  height: 900px;
+  color: white;
+  background-color: rgb(10, 10, 10);
+}
+
+#section3 {
+  height: 1000px;
+  color: white;
+  background-color: rgb(10, 10, 10);
+  position: relative;
+}
+
+#section4 {
+  height: 950px;
+  background-color: white;
+  width: 100%;
+}
+
+#section5 {
+  height: 950px;
+  background-color: white;
+  width: 100%;
+}
+
+#topBar {
+  font-family: HLight;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  padding-top: 0.4vw;
+}
+
+#midBar {
+  font-family: HLight;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  padding-top: 0.6vw;
+}
+
+#botBar {
+  color: white;
+  font-family: HLight;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  padding-top: 0.5vw;
+}
+
+#mainSplash {
+  font-family: HMed;
+  font-size: 150px;
+  letter-spacing: -5px;
+  padding: 20px;
+}
+
+#infoSplash {
+  text-align: right;
+  font-family: HThin;
+  font-size: 40px;
+  letter-spacing: -2px;
+  line-height: 1;
+  padding: 20px;
+}
+
+#circle {
+  margin-top: 50px;
+  margin-left: 0px;
+  width: 150px;
+  height: 150px;
+  background-color: black;
+  border-radius: 50%;
+  font-size: 80px;
+  color: white;
+  text-align: center;
+  line-height: 150px;
+  transition: width 0.5s, height 0.5s, line-height 0.5s;
+}
+
+#circle:hover {
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+}
+
+.s1marquee {
+  margin-top: -15px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.s1scrolling {
+  animation: marquee 25s linear infinite;
+  display: inline-block;
+  padding-right: 10px;
+  font-size: 70px;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#links {
+  position: absolute;
+  padding-top: 5px;
+  margin-top: 2vw;
+  margin-left: -5vw;
+  width: 90%;
+  text-align: center;
+  height: 50px;
+  background-color: rgb(10, 10, 10);
+}
+li {
+  display: inline-block;
+}
+li a {
+  text-decoration: none;
+  display: inline-block;
+  font-family: HThin;
+  font-size: 30px;
+  color: white;
+  padding: 0 3vw;
+}
+.linkhover::after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 1.5s;
+}
+.linkhover:hover::after {
+  width: 100%;
+  transition: width 1.5s;
+}
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+#s2Main {
+  font-family: HMed;
+  font-size: 150px;
+  letter-spacing: -5px;
+  text-align: center;
+}
+
+#mobileorderloop {
+  padding-right: 30px;
+  width: 300px;
+  padding-top: 150px;
+  align-items: right;
+}
+
+#mobileOrderLarge {
+  padding-top: 250px;
+  padding-left: 0px;
+  font-size: 70px;
+  font-family: SFBold;
+}
+
+#mobileOrderSmall {
+  padding-left: 3px;
+  margin-top: -12px;
+  font-size: 26px;
+  font-family: SFMed;
+}
+
+#mobileline {
+  width: 400px;
+  margin-left: 0;
+}
+
+#gitlink {
+  padding-left: 3px;
+  margin-top: 10px;
+  font-size: 26px;
+  font-family: SFLight;
+}
+
+#gitbar {
+  width: 400px;
+  height: 10px;
+  margin-left: 3px;
+  margin-top: 15px;
+  display: flex;
+}
+
+#gitbarswift {
+  width: 99%;
+  height: 100%;
+  background-color: #ffac45;
+  border-radius: 30px 0 0 30px;
+}
+#gitbarruby {
+  width: 2%;
+  height: 100%;
+  border-radius: 0 30px 30px 0;
+  background-color: #701516;
+}
+
+#gitbarstats {
+  padding-left: 3px;
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: SFMed;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin-right: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#s4info {
+  width: 55%;
+  float: right;
+}
+#s4loop {
+  width: 45%;
+  float: left;
+  text-align: right;
+}
+
+#section5Big {
+  width: 20%;
+  text-align: right;
+  font-family: HReg;
+  font-size: 100px;
+  letter-spacing: -5px;
+  padding: 20px;
+  display: inline-block;
+}
+
+#section5small {
+  text-align: right;
+  font-family: HThin;
+  font-size: 40px;
+  letter-spacing: -2px;
+  line-height: 1;
+  padding: 20px;
+}
+#section5desc {
+  text-align: right;
+  font-family: HThin;
+  font-size: 40px;
+  letter-spacing: -2px;
+  line-height: 1;
+  width: 70%;
+  display: inline-block;
+}
+
+#sectionEND {
+  height: 48vw;
+  color: white;
+  margin: 0;
+  position: relative;
+}
+#S6largetitle {
+  width: 100%;
+  text-align: center;
+  padding-top: 18vw;
+  height: 6vw;
+  bottom: 0;
+  font-size: 5vw;
+  font-family: SFBold;
+}
+#S6sub {
+  width: 100%;
+  text-align: center;
+  height: 6vw;
+  bottom: 0;
+  font-size: 3vw;
+  font-family: SFLight;
+  height: 20vw;
+}
+
+@media screen and (max-width: 800px) {
+  #section1 {
+    height: 190vw;
+    min-height: 300px;
+  }
+
+  #section2 {
+    height: 150vw;
+    color: white;
+    background-color: rgb(10, 10, 10);
+  }
+
+  #section3 {
+    height: 230vw;
+    color: white;
+    background-color: rgb(10, 10, 10);
+    position: relative;
+  }
+
+  #section4 {
+    height: 180vw;
+  }
+  #section5 {
+    height: 180vw;
+  }
+
+  #topBar {
+    font-family: HLight;
+    font-size: 3vw;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1vw;
+  }
+
+  #midBar {
+    font-family: HLight;
+    font-size: 3vw;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1vw;
+    padding-right: 0.5vw;
+    padding-top: 0.6vw;
+  }
+
+  #botBar {
+    font-family: HLight;
+    font-size: 3vw;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    padding-top: 0.5vw;
+  }
+
+  #mainSplash {
+    font-family: HMed;
+    font-size: 17vw;
+    letter-spacing: -0.5vw;
+  }
+
+  #infoSplash {
+    text-align: right;
+    font-family: HThin;
+    font-size: 8vw;
+    letter-spacing: -0.1vw;
+    line-height: 1;
+    padding: 3vw;
+  }
+
+  #circle {
+    position: absolute;
+    margin-top: 60vw;
+    width: 25vw;
+    height: 25vw;
+    background-color: black;
+    border-radius: 50%;
+    line-height: 25vw;
+    z-index: 100;
+    transition: all 1s ease-in-out;
+  }
+  #circle:hover {
+    width: 25vw;
+    height: 25vw;
+    line-height: 25vw;
+  }
+
+  .s1marquee {
+    margin-top: -15px;
+  }
+
+  .s1scrolling {
+    font-size: 8vw;
+  }
+
+  #s1scrollContainer {
+    margin-top: 20vw;
+  }
+
+  #links {
+    position: absolute;
+    width: 120%;
+    text-align: center;
+    height: 70vw;
+    margin-left: -130vw;
+    background-color: rgb(10, 10, 10);
+    transition: all 1s ease-in-out;
+  }
+
+  li {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    padding-top: 3vw;
+    padding-left: 3vw;
+  }
+
+  a:link {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+  }
+
+  #s2Main {
+    font-family: HMed;
+    font-size: 20vw;
+    letter-spacing: -3px;
+    text-align: center;
+  }
+  #s4info {
+    width: 100%;
+    float: right;
+  }
+  #s4loop {
+    width: 0%;
+    float: left;
+    text-align: right;
+  }
+
+  #mobileorderloop {
+    width: 60vw;
+    padding-left: 0;
+    padding-top: 0;
+    margin-left: 37vw;
+    margin-top: 45vw;
+    position: absolute;
+  }
+
+  #mobileOrderLarge {
+    padding-top: 15vw;
+    margin-left: 5.5vw;
+    text-align: Left;
+    font-size: 14vw;
+    font-family: SFBold;
+    letter-spacing: 0;
+  }
+
+  #mobileOrderSmall {
+    margin-left: -35.5vw;
+    margin-top: -2vw;
+    text-align: center;
+    font-size: 4vw;
+    font-family: SFMed;
+    letter-spacing: 0;
+  }
+
+  #mobileline {
+    width: 80vw;
+    margin-left: 5.8vw;
+  }
+
+  #gitlink {
+    margin-left: -51.8vw;
+    margin-top: 3vw;
+    text-align: center;
+    font-size: 3.5vw;
+    font-family: SFLight;
+    letter-spacing: 0;
+  }
+
+  #gitbar {
+    transform: rotate(270deg);
+    width: 40vw;
+    height: 2.5vw;
+    margin-left: 14vw;
+    margin-top: 57vw;
+    display: flex;
+  }
+
+  #gitbarswift {
+    width: 8%;
+    height: 100%;
+    background-color: #701516;
+    border-radius: 30px 0 0 30px;
+  }
+  #gitbarruby {
+    width: 92%;
+    height: 100%;
+    border-radius: 0 30px 30px 0;
+    background-color: #ffac45;
+  }
+
+  #gitbarstats {
+    margin-left: 4vw;
+    margin-top: -5vw;
+    text-align: right;
+    font-size: 3.5vw;
+    font-family: SFMed;
+    width: 25%;
+  }
+
+  .dot {
+    height: 2.5vw;
+    width: 2.5vw;
+    margin-right: 0.6vw;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  #section5Big {
+    font-family: HReg;
+    font-size: 10vw;
+    letter-spacing: -0.5vw;
+    width: 30%;
+  }
+
+  #section5small {
+    text-align: right;
+    font-family: HThin;
+    font-size: 4vw;
+    letter-spacing: -0.1vw;
+    line-height: 1;
+    padding: 3vw;
+  }
+  #section5desc {
+    text-align: right;
+    font-family: HThin;
+    font-size: 20px;
+    letter-spacing: -2px;
+    line-height: 1;
+    margin-right: 100px;
+    width: 100%;
+    display: block;
+  }
+
+  #S6largetitle {
+    width: 100%;
+    text-align: center;
+    padding-top: 18vw;
+    height: 6vw;
+    bottom: 0;
+    font-size: 7vw;
+    font-family: SFBold;
+  }
+  #S6sub {
+    width: 100%;
+    text-align: center;
+    height: 6vw;
+    bottom: 0;
+    font-size: 5vw;
+    margin-top: 2vw;
+    font-family: SFLight;
+    height: 20vw;
+  }
+}

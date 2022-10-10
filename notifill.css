@@ -1,0 +1,202 @@
+#section3 {
+  --igleft: 40vw;
+  --igright: 30vw;
+  --igtop: 350px;
+  --igwidth: 600px;
+
+  --tleft: 47vw;
+  --tright: 50vw;
+  --ttop: 440px;
+  --twidth: 600px;
+
+  --scleft: 40vw;
+  --scright: 30vw;
+  --sctop: 550px;
+  --scwidth: 600px;
+}
+
+#s3Main {
+  font-family: HMed;
+  font-size: 120px;
+  letter-spacing: -6px;
+  padding-left: 10vw;
+  padding-top: 80px;
+  height: 133px;
+}
+
+#s3Sub {
+  font-family: HThin;
+  font-size: 40px;
+  letter-spacing: -2.5px;
+  padding-left: 10.3vw;
+  height: 195px;
+}
+
+#s3Point {
+  font-family: HReg;
+  font-size: 30px;
+  width: 350px;
+  letter-spacing: -2px;
+  padding-left: 12vw;
+  line-height: 1;
+}
+
+#s3Desc {
+  font-family: HELight;
+  font-size: 25px;
+  letter-spacing: -2px;
+  text-align: right;
+  padding-right: 10vw;
+  padding-top: 180px;
+  padding-bottom: 50px;
+}
+
+#packix {
+  padding-left: 5vw;
+  width: 250px;
+}
+
+#iggrey {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: var(--igleft);
+  right: var(--igright);
+  top: var(--igtop);
+  width: var(--igwidth);
+}
+#igtext {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: var(--igleft);
+  right: var(--igright);
+  top: var(--igtop);
+  width: var(--igwidth);
+}
+#igfill {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: var(--igleft);
+  right: var(--igright);
+  top: var(--igtop);
+  width: var(--igwidth);
+}
+
+#scgrey {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: var(--scleft);
+  right: var(--scright);
+  top: var(--sctop);
+  width: var(--scwidth);
+}
+#sctext {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: var(--scleft);
+  right: var(--scright);
+  top: var(--sctop);
+  width: var(--scwidth);
+}
+#scfill {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: var(--scleft);
+  right: var(--scright);
+  top: var(--sctop);
+  width: var(--scwidth);
+}
+
+#tgrey {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: var(--tleft);
+  right: var(--tright);
+  top: var(--ttop);
+  width: var(--twidth);
+}
+#ttext {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: var(--tleft);
+  right: var(--tright);
+  top: var(--ttop);
+  width: var(--twidth);
+}
+#tfill {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: var(--tleft);
+  right: var(--tright);
+  top: var(--ttop);
+  width: var(--twidth);
+}
+
+@media screen and (max-width: 800px) {
+  #s3Main {
+    font-family: HMed;
+    font-size: 18vw;
+    letter-spacing: -3px;
+    padding-left: 2vw;
+    padding-top: 15vw;
+    height: 22vw;
+  }
+
+  #s3Sub {
+    font-family: HThin;
+    font-size: 7vw;
+    letter-spacing: -2.5px;
+    padding-left: 3vw;
+    height: 23vw;
+  }
+
+  #s3Point {
+    font-family: HReg;
+    font-size: 8vw;
+    width: 80vw;
+    letter-spacing: -2px;
+    padding-left: 4vw;
+    line-height: 1;
+  }
+
+  #s3Desc {
+    font-family: HELight;
+    font-size: 5vw;
+    letter-spacing: -1px;
+    text-align: right;
+    width: 60%;
+    line-height: 1;
+    margin-left: 35vw;
+    padding-top: 90vw;
+  }
+
+  #packix {
+    padding-left: 5vw;
+    width: 40vw;
+  }
+
+  #section3 {
+    --igleft: 28vw;
+    --igright: 0;
+    --igtop: 95vw;
+    --igwidth: 150vw;
+
+    --tleft: 18vw;
+    --tright: 0;
+    --ttop: 118vw;
+    --twidth: 150vw;
+
+    --scleft: 10vw;
+    --scright: 0;
+    --sctop: 147vw;
+    --scwidth: 150vw;
+  }
+}
